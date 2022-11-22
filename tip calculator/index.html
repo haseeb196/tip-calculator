@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tip Calculator</title>
+</head>
+<body>
+   <div class ="title">Tip Calculator</div>
+ <div id = "wrapper">
+  <div class = "conatainer">
+   <div class="container-0">
+      <div id = "bill">Bill-Amount</div>
+    
+      <span id = "h">$</span>
+      <input onkeyup="calculatebill()"  type="text" id="bill-amount" placeholder="0.00"  />
+      
+   </div>
+   <div class = "container-1"></div>
+    <div id = "tip">Tip-Amount</div>
+      <span id ="b">%</span>
+    <input onkeyup="calculatebill()"  type="text"  id="tip-amount" placeholder="10"  />
+
+   <div class ="container-5">
+   <div class = "container-2">
+      <div class = "People">People</div>
+      <button class="btn-1" onclick="increaseperson()"><ion-icon name="add-circle-sharp"></ion-icon></button>
+      <span id = "number-of-people">0</span>
+      <button class = "btn-2" onclick="decreaseperson()"><ion-icon name="remove-circle-sharp"></ion-icon></button>
+   </div>
+   <div class="container-3">
+      <div class = "totalperperson">TotalPerPerson</div>
+      <div class="total" id="perPersonTotal">$0.00</div>
+   </div></div>
+</div>
+ </div>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script  type="text/javascript"  src="index.js"></script>
+ 
+   
+</body>
+</html>
